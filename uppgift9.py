@@ -12,7 +12,7 @@
 
 class Djur:
     def djurläte(self):
-        print("...")
+        pass
         
 class Hund(Djur):
     def djurläte(self):
