@@ -8,3 +8,8 @@
 
 #· inte tillåter att priset sätts till ett negativt värde
 
+class Produkt:
+    def __init__(self, pris):
+        self._pris = pris
+        
+    @property
