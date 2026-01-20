@@ -17,16 +17,21 @@
 class Bankkonto:
     def __init__(self):
         self.__saldo = 0
-
+        
     def satt_in(self, belopp):
         if belopp > 0:
             self.__saldo += belopp
-
+    
     def ta_ut(self, belopp):
         if 0 < belopp <= self.__saldo:
             self.__saldo -= belopp
         else:
             print("Otillräckligt saldo eller ogiltigt belopp.")
-
-    def get_saldo(self):
+            
+    def hamta_saldo(self):
         return self.__saldo
+# Exempel på användning:
+konto = Bankkonto()
+konto.satt_in(1000)
+konto.ta_ut(500)
+print(konto.hamta_saldo())  # Output: 500
