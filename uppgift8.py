@@ -9,16 +9,16 @@
 #· Bil ska skriva ut något mer specifikt än basklassen när kora() anropas
 
 class Fordon:
-    def kora():
+    def kora(self):
         return "..."
     
 class Bil(Fordon):
-    def kora():
+    def kora(self):
         return "brum BrumBRUM"
     
-f = Fordon
-b = Bil
+f = Fordon()
+b = Bil()
 
-print(f.kora)
-print(b.kora)
+print(f.kora())
+print(b.kora())
     
