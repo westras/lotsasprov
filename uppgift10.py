@@ -10,6 +10,15 @@
 
 class Produkt:
     def __init__(self, pris):
-        self._pris = pris
+        self._pris = 0
+        self.pris = pris
         
     @property
+    def pris(self):
+        return self._pris
+    
+    @pris.setter
+    def pris(self, value):
+        if value >= 0:
+            self.value = value
+            
