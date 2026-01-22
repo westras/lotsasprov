@@ -14,14 +14,3 @@ class Produkt:
         self.pris = pris
         
     @property
-    def pris(self):
-        return self._pris
-    
-    @pris.setter
-    def pris(self, value):
-        if value >= 0:
-            self._pris = value
-            
- 
-produkt = Produkt(100)
-print(produkt.pris)  
