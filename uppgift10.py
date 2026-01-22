@@ -21,3 +21,6 @@ class Produkt:
     def pris(self, value):
         if value >= 0:
             self._pris = value
+            
+produkt = Produkt(100)
+print(produkt.pris)
