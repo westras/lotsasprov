@@ -24,14 +24,17 @@ class Lärare(Anställd):
         super().__init__(namn)
     
     def beskrivning(self):
-        return super().beskrivning()
+        return "Lärarens namn är " + self.namn
     
 class Rektor(Anställd):
     def __init__(self, namn):
         super().__init__(namn)
     
     def beskrivning(self):
-        return super().beskrivning()
+        return "Rektorns namn är " + self.namn
     
-r = Rektor
-l = Lärare
+lärare1 = Lärare("Anna")
+rektor1 = Rektor("Björn")
+
+print(lärare1.beskrivning())
+print(rektor1.beskrivning())
